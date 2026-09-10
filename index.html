@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nadhif | Portofolio</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <div class="cursor-dot"></div>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <i class="fa-solid fa-gear logo-icon"></i>
+          <span class="logo-text">Portofolio</span>
+        </a>
+
+        <nav>
+          <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+            <li class="nav-item">
+              <a href="#Home" class="nav-link" data-i18n="nav_home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#About" class="nav-link" data-i18n="nav_about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Skills" class="nav-link" data-i18n="nav_skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#Projects" class="nav-link" data-i18n="nav_projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" data-i18n="nav_contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Tombol Switcher EN | ID -->
+        <div class="lang-switch-toggle">
+          <button id="btn-lang-en" class="lang-option active">EN</button>
+          <span class="divider">|</span>
+          <button id="btn-lang-id" class="lang-option">ID</button>
+        </div>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="Home">
+      <div class="section-content">
+        <div class="hero-details">
+          <!-- Teks ini TETAP berganti otomatis 5 bahasa -->
+          <h2 class="title reveal">
+            <span id="changing-greeting">Hi, I am</span>
+          </h2>
+
+          <h1 class="name reveal delay-1">Nadhif Alfaridzi Putratama</h1>
+
+          <h3 class="subtitle reveal delay-2" data-i18n="hero_subtitle">
+            Mechatronic Engineering || Industrial Automation || Control Systems
+          </h3>
+
+          <p class="description reveal delay-3" data-i18n="hero_desc">
+            Six-month internship experience in Electrical Applications &
+            Robotics 1 at PT Astra Otoparts divisi Winteq
+          </p>
+
+          <div class="hero-buttons">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=nadhifalfaridzi@gmail.com"
+              target="_blank"
+              class="btn btn-primary"
+            >
+              <i class="fa-regular fa-envelope"></i>
+              <span data-i18n="btn_email">Email Me</span>
+            </a>
+            <a
+              href="Assets/pdf/CV_Nadhif Alfaridzi Putratama.pdf"
+              download
+              class="btn btn-secondary"
+            >
+              <i class="fa-solid fa-download"></i>
+              <span data-i18n="btn_cv">Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img
+            src="Assets/img/nadhif1.png"
+            alt="Nadhif"
+            class="hero-image"
+            id="interactive-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="About">
+      <div class="about-container">
+        <!-- Sisi Kiri: Foto Profil -->
+        <div class="about-image-wrapper reveal">
+          <img
+            src="Assets/img/nadhif2.jpg"
+            alt="Nadhif Alfaridzi"
+            class="about-img"
+          />
+        </div>
+
+        <!-- Sisi Kanan: Detail Informasi -->
+        <div class="about-content">
+          <span class="section-subtitle reveal" data-i18n="about_subtitle"
+            >ABOUT ME</span
+          >
+
+          <div class="about-bio reveal delay-1">
+            <p data-i18n="about_bio_1">
+              <strong
+                >Final-year Mechatronic Engineering student at Politeknik
+                Astra</strong
+              >
+              with a strong interest in industrial automation, electrical
+              engineering, control systems, and mechanical design.
+            </p>
+            <p data-i18n="about_bio_2">
+              <strong
+                >Skilled in PLC, HMI, electrical wiring, system integration,
+                CAD, and microcontroller/IoT</strong
+              >
+              through academic and industrial project experience. A dedicated
+              and continuous learner with strong problem-solving, teamwork,
+              communication, and adaptability skills.
+            </p>
+          </div>
+
+          <div class="about-divider reveal delay-2"></div>
+
+          <!-- Section Bahasa -->
+          <div class="about-languages reveal delay-2">
+            <h3 class="lang-title" data-i18n="about_lang_title">Languages</h3>
+            <div class="lang-tags">
+              <div class="lang-badge">
+                <i class="fa-solid fa-language"></i>
+                <span data-i18n="lang_id">Indonesia — Native</span>
+              </div>
+              <div class="lang-badge">
+                <i class="fa-solid fa-language"></i>
+                <span data-i18n="lang_en">English — Intermediate</span>
+              </div>
+              <div class="lang-badge">
+                <i class="fa-solid fa-language"></i>
+                <span data-i18n="lang_ar">Arabic — Intermediate</span>
+              </div>
+              <div class="lang-badge">
+                <i class="fa-solid fa-language"></i>
+                <span data-i18n="lang_de">German — Passive</span>
+              </div>
+              <div class="lang-badge">
+                <i class="fa-solid fa-language"></i>
+                <span data-i18n="lang_ja">Japanese — Basic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-divider reveal delay-3"></div>
+
+          <!-- Section Statistik -->
+          <div class="stats-grid reveal delay-3">
+            <div class="stat-item">
+              <span class="stat-number">2023</span>
+              <span class="stat-label" data-i18n="stat_college"
+                >Starting College</span
+              >
+            </div>
+
+            <div class="stat-item">
+              <span class="stat-number">8+</span>
+              <span class="stat-label" data-i18n="stat_projects"
+                >Project Completed</span
+              >
+            </div>
+
+            <div class="stat-item">
+              <span class="stat-number">20+</span>
+              <span class="stat-label" data-i18n="stat_tools"
+                >Tools Skills</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="Skills">
+      <div class="section-content">
+        <h2 class="section-title reveal" data-i18n="skills_title">
+          Skills & Expertise
+        </h2>
+
+        <div class="skills-grid">
+          <!-- Category 1: Industrial Automation -->
+          <div class="skills-category reveal delay-1">
+            <h3 class="category-title" data-i18n="cat_automation">
+              Industrial Automation
+            </h3>
+            <div class="skills-tags">
+              <div class="skill-pill">
+                <i class="fa-solid fa-microchip"></i>
+                <span data-i18n="skill_plc">PLC Programming</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-display"></i>
+                <span data-i18n="skill_hmi">HMI Design</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span data-i18n="skill_problem">Problem Solving</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-gears"></i>
+                <span data-i18n="skill_pneumatics"
+                  >Pneumatics & Hydraulics</span
+                >
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-bolt"></i>
+                <span data-i18n="skill_wiring">Electrical Wiring</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: IoT Platforms & Data Visualization -->
+          <div class="skills-category reveal delay-2">
+            <h3 class="category-title" data-i18n="cat_iot">
+              IoT Platforms & Data Visualization
+            </h3>
+            <div class="skills-tags">
+              <div class="skill-pill">
+                <i class="fa-solid fa-diagram-project"></i> Node-RED
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-chart-line"></i> ThingsBoard
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-fire"></i> Firebase
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-network-wired"></i> MQTT
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: CAD & PCB Design -->
+          <div class="skills-category reveal delay-3">
+            <h3 class="category-title" data-i18n="cat_cad">CAD & PCB Design</h3>
+            <div class="skills-tags">
+              <div class="skill-pill">
+                <i class="fa-solid fa-cube"></i>
+                <span data-i18n="skill_creo">CREO 3D Modeling</span>
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-circuit-board"></i>
+                <span data-i18n="skill_kicad">KiCad PCB Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Embedded Systems & Microcontrollers -->
+          <div class="skills-category reveal delay-1">
+            <h3 class="category-title" data-i18n="cat_embedded">
+              Embedded Systems & Microcontrollers
+            </h3>
+            <div class="skills-tags">
+              <div class="skill-pill">
+                <i class="fa-solid fa-code"></i> Arduino IDE
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-wifi"></i> ESP32/ESP8266
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-microchip"></i> I2C/SPI/UART
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Database & Backend -->
+          <div class="skills-category reveal delay-2">
+            <h3 class="category-title" data-i18n="cat_database">
+              Database & Backend
+            </h3>
+            <div class="skills-tags">
+              <div class="skill-pill">
+                <i class="fa-solid fa-database"></i> MySQL
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-server"></i> REST API
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: App Development & UI -->
+          <div class="skills-category reveal delay-3">
+            <h3 class="category-title" data-i18n="cat_app">
+              App Development & UI
+            </h3>
+            <div class="skills-tags">
+              <div class="skill-pill">
+                <i class="fa-brands fa-android"></i> Android Studio
+              </div>
+              <div class="skill-pill">
+                <i class="fa-solid fa-code"></i>
+                <span data-i18n="skill_xml">XML UI Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 7: Microsoft Office -->
+          <div class="skills-category full-width reveal delay-3">
+            <h3 class="category-title">Microsoft Office</h3>
+            <div class="skills-tags">
+              <div class="skill-pill">
+                <i class="fa-regular fa-file-word"></i> Word
+              </div>
+              <div class="skill-pill">
+                <i class="fa-regular fa-file-excel"></i> Excel
+              </div>
+              <div class="skill-pill">
+                <i class="fa-regular fa-file-powerpoint"></i> PowerPoint
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="Projects">
+      <h2 class="section-title reveal" data-i18n="projects_title">Projects</h2>
+      <div class="section-content reveal delay-1">
+        <div class="slider-container swiper">
+          <div class="slider-wrapper swiper-wrapper">
+            <!-- Project 01 -->
+            <div class="project swiper-slide">
+              <span class="project-number">01</span>
+              <img
+                src="Assets/img/project1.png"
+                alt="Automatic Paint Mixing System"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_1_title">
+                Automatic Paint Mixing System
+              </h3>
+              <p class="feedback" data-i18n="proj_1_desc">
+                An Automatic Paint Mixing System developed using Omron PLC and
+                HMI as part of a basic automation engineering project, featuring
+                automated color selection, dosing, and mixing processes.
+              </p>
+            </div>
+
+            <!-- Project 02 -->
+            <div class="project swiper-slide">
+              <span class="project-number">02</span>
+              <img
+                src="Assets/img/project2.png"
+                alt="SCADA-Coconut Shell Charcoal Briquettes Manufacturing"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_2_title">
+                SCADA-Coconut Shell Charcoal Briquettes Manufacturing
+              </h3>
+              <p class="feedback" data-i18n="proj_2_desc">
+                SCADA-based briquette manufacturing system integrating
+                Mitsubishi, Omron, and Schneider PLCs into a single PC for
+                centralized monitoring and process control.
+              </p>
+            </div>
+
+            <!-- Project 03 -->
+            <div class="project swiper-slide">
+              <span class="project-number">03</span>
+              <img
+                src="Assets/img/project3.png"
+                alt="Hot Rack"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_3_title">
+                Hot Rack - PT. Suryaraya Rubberindo Industries
+              </h3>
+              <p class="feedback" data-i18n="proj_3_desc">
+                Industrial automation project developed as part of a campus
+                lecturer's project for PT Suryaraya Rubberindo Industries, where
+                I assisted in electrical wiring, wiring diagram development, PLC
+                programming, and HMI configuration, targeting ≥90% system
+                integration and 97% I/O verification.
+              </p>
+            </div>
+
+            <!-- Project 04 -->
+            <div class="project swiper-slide">
+              <span class="project-number">04</span>
+              <img
+                src="Assets/img/project4.png"
+                alt="Smart Hydroponic"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_4_title">
+                Smart Hydroponic with Camera Monitoring
+              </h3>
+              <p class="feedback" data-i18n="proj_4_desc">
+                Developed an IoT-based hydroponic monitoring system integrating
+                ESP32, environmental sensors, and YOLOv11 computer vision to
+                monitor plant growth and conditions in real time. Data is
+                transmitted via MQTT/HTTP and displayed through a monitoring
+                dashboard.
+              </p>
+            </div>
+
+            <!-- Project 05 -->
+            <div class="project swiper-slide">
+              <span class="project-number">05</span>
+              <img
+                src="Assets/img/project5.png"
+                alt="GrowHytech"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_5_title">
+                GrowHytech – Smart Hydroponic Monitoring Application
+              </h3>
+              <p class="feedback" data-i18n="proj_5_desc">
+                Developed an Android-based smart hydroponic monitoring
+                application for real-time monitoring of temperature, humidity,
+                pH, and plant growth. The application integrates IoT sensors and
+                YOLOv11 computer vision to provide plant monitoring data through
+                an intuitive mobile interface.
+              </p>
+            </div>
+
+            <!-- Project 06 -->
+            <div class="project swiper-slide">
+              <span class="project-number">06</span>
+              <img
+                src="Assets/img/project6.png"
+                alt="Auto COS Tin Deburring Machine"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_6_title">
+                Auto COS Tin Deburring Machine – Electrical Wiring & Assembly
+                Support
+              </h3>
+              <p class="feedback" data-i18n="proj_6_desc">
+                Contributed to the development of a COS Tin Deburring Machine as
+                a wiring technician, supporting electrical wiring, component
+                installation, machine assembly, and other technical activities
+                during the machine-building process.
+              </p>
+            </div>
+
+            <!-- Project 07 -->
+            <div class="project swiper-slide">
+              <span class="project-number">07</span>
+              <img
+                src="Assets/img/project7.png"
+                alt="Automation Machining Line"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_7_title">
+                Automation Machining Line – Wiring & Assembly Support
+              </h3>
+              <p class="feedback" data-i18n="proj_7_desc">
+                Supported the development of an automation machining machine by
+                performing electrical wiring, cable routing, component
+                installation, and machine assembly.
+              </p>
+            </div>
+
+            <!-- Project 08 -->
+            <div class="project swiper-slide">
+              <span class="project-number">08</span>
+              <img
+                src="Assets/img/project8.png"
+                alt="Auto Transfer System"
+                class="project-image"
+              />
+              <h3 class="name" data-i18n="proj_8_title">
+                Auto Transfer System – Electrical Wiring & Assembly Support
+              </h3>
+              <p class="feedback" data-i18n="proj_8_desc">
+                Assisted in the development of an automatic material transfer
+                machine by carrying out electrical wiring, cable termination,
+                component installation, and connection checks. Supported the
+                technical team in preparing the machine for system integration
+                and ensuring the electrical components were properly installed
+                according to the required configuration.
+              </p>
+            </div>
+          </div>
+
+          <!-- Swiper Controls -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <!-- Subtitle kecil di atas judul -->
+        <span class="section-subtitle reveal" data-i18n="contact_subtitle"
+          >CONTACT</span
+        >
+
+        <!-- Title dengan efek reveal -->
+        <h2 class="contact-title reveal">
+          <span class="text-white" data-i18n="contact_title_1">Let's</span>
+          <span class="text-gold" data-i18n="contact_title_2">Discuss</span>
+        </h2>
+
+        <!-- Deskripsi dengan efek reveal + delay 1 -->
+        <p class="contact-description reveal delay-1" data-i18n="contact_desc">
+          Have an idea or an exciting opportunity? I’m always open to meaningful
+          conversations, new challenges, and opportunities to collaborate,
+          learn, and create impactful solutions together.
+        </p>
+
+        <!-- Tombol dengan efek reveal + delay 2 -->
+        <div class="contact-buttons reveal delay-2">
+          <a
+            href="https://wa.me/62895320309228"
+            target="_blank"
+            class="btn-contact"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>WHATSAPP</span>
+          </a>
+
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=nadhifalfaridzi@gmail.com"
+            target="_blank"
+            class="btn-contact"
+          >
+            <i class="fa-regular fa-envelope"></i>
+            <span>EMAIL</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Copyright Text -->
+        <p class="copyright-text">&copy; 2026 Nadhif Alfaridzi Putratama</p>
+
+        <!-- Social Media Icons -->
+        <div class="footer-socials">
+          <a
+            href="https://github.com/nadhifdoang"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/Nadhif Alfaridzi Putratama"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <!-- Gunakan class fa-brands fa-instagram -->
+          <a
+            href="https://instagram.com/nadhif_a.p"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const menuOpenButton = document.querySelector("#menu-open-button");
+      const menuCloseButton = document.querySelector("#menu-close-button");
+      const navLinks = document.querySelectorAll(".nav-menu .nav-link");
+
+      menuOpenButton.addEventListener("click", () => {
+        document.body.classList.toggle("show-mobile-menu");
+      });
+
+      menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => menuOpenButton.click());
+      });
+
+      // Scroll Reveal
+      document.addEventListener("DOMContentLoaded", () => {
+        const reveals = document.querySelectorAll(".reveal");
+
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.2,
+          }
+        );
+
+        reveals.forEach((el) => revealObserver.observe(el));
+
+        // Swiper Slider Initialization
+        new Swiper(".slider-container", {
+          slidesPerView: 1,
+          spaceBetween: 25,
+          loop: true,
+          grabCursor: true,
+          pagination: {
+            el: ".swiper-pagination",
+            type: "fraction", // Menampilkan indikator angka halaman/slide misal: 1 / 8
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+          },
+        });
+      });
+
+      const cursorDot = document.querySelector(".cursor-dot");
+
+      // Cek apakah perangkat menggunakan mouse (Desktop)
+      if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+        window.addEventListener("mousemove", (e) => {
+          if (cursorDot) {
+            cursorDot.style.left = `${e.clientX}px`;
+            cursorDot.style.top = `${e.clientY}px`;
+          }
+        });
+      }
+    </script>
+    <script>
+      /* ========================================================
+       1. ANIMASI PERGANTIAN KATA "HI, I AM" (AUTOMATIC)
+       ======================================================== */
+      const greetings = [
+        { text: "Hi, I am", lang: "en" },
+        { text: "Halo, Saya", lang: "id" },
+        { text: "مرحباً، أنا", lang: "ar" },
+        { text: "Hallo, ich bin", lang: "de" },
+        { text: "こんにちは、私は", lang: "ja" },
+      ];
+
+      let greetingIndex = 0;
+      const greetingElement = document.getElementById("changing-greeting");
+
+      if (greetingElement) {
+        setInterval(() => {
+          greetingElement.classList.add("slide-out-right");
+
+          setTimeout(() => {
+            greetingIndex = (greetingIndex + 1) % greetings.length;
+            greetingElement.textContent = greetings[greetingIndex].text;
+            greetingElement.setAttribute("lang", greetings[greetingIndex].lang);
+
+            greetingElement.classList.remove("slide-out-right");
+            greetingElement.classList.add("prepare-left");
+
+            requestAnimationFrame(() => {
+              greetingElement.classList.remove("prepare-left");
+            });
+          }, 400);
+        }, 3000);
+      }
+
+      /* ========================================================
+       2. TRANSLATOR KESELURUHAN HALAMAN (ENGLISH <-> INDONESIA)
+       ======================================================== */
+      const translations = {
+        en: {
+          // Nav & Hero
+          nav_home: "Home",
+          nav_about: "About",
+          nav_skills: "Skills",
+          nav_projects: "Projects",
+          nav_contact: "Contact",
+          hero_subtitle:
+            "Mechatronic Engineering || Industrial Automation || Control Systems",
+          hero_desc:
+            "Six-month internship experience in Electrical Applications & Robotics 1 at PT Astra Otoparts divisi Winteq",
+          btn_email: "Email Me",
+          btn_cv: "Download CV",
+
+          // About Section
+          about_subtitle: "ABOUT ME",
+          about_bio_1:
+            "<strong>Final-year Mechatronic Engineering student at Politeknik Astra</strong> with a strong interest in industrial automation, electrical engineering, control systems, and mechanical design.",
+          about_bio_2:
+            "<strong>Skilled in PLC, HMI, electrical wiring, system integration, CAD, and microcontroller/IoT</strong> through academic and industrial project experience. A dedicated and continuous learner with strong problem-solving, teamwork, communication, and adaptability skills.",
+          about_lang_title: "Languages",
+          lang_id: "Indonesia — Native",
+          lang_en: "English — Intermediate",
+          lang_ar: "Arabic — Intermediate",
+          lang_de: "German — Passive",
+          lang_ja: "Japanese — Basic",
+          stat_college: "Starting College",
+          stat_projects: "Project Completed",
+          stat_tools: "Tools Skills",
+
+          // Skills Section
+          skills_title: "Skills & Expertise",
+          cat_automation: "Industrial Automation",
+          skill_plc: "PLC Programming",
+          skill_hmi: "HMI Design",
+          skill_problem: "Problem Solving",
+          skill_pneumatics: "Pneumatics & Hydraulics",
+          skill_wiring: "Electrical Wiring",
+          cat_iot: "IoT Platforms & Data Visualization",
+          cat_cad: "CAD & PCB Design",
+          skill_creo: "CREO 3D Modeling",
+          skill_kicad: "KiCad PCB Design",
+          cat_embedded: "Embedded Systems & Microcontrollers",
+          cat_database: "Database & Backend",
+          cat_app: "App Development & UI",
+          skill_xml: "XML UI Design",
+
+          // Projects Section
+          projects_title: "Projects",
+          proj_1_title: "Automatic Paint Mixing System",
+          proj_1_desc:
+            "An Automatic Paint Mixing System developed using Omron PLC and HMI as part of a basic automation engineering project, featuring automated color selection, dosing, and mixing processes.",
+          proj_2_title: "SCADA-Coconut Shell Charcoal Briquettes Manufacturing",
+          proj_2_desc:
+            "SCADA-based briquette manufacturing system integrating Mitsubishi, Omron, and Schneider PLCs into a single PC for centralized monitoring and process control.",
+          proj_3_title: "Hot Rack - PT. Suryaraya Rubberindo Industries",
+          proj_3_desc:
+            "Industrial automation project developed as part of a campus lecturer's project for PT Suryaraya Rubberindo Industries, where I assisted in electrical wiring, wiring diagram development, PLC programming, and HMI configuration, targeting ≥90% system integration and 97% I/O verification.",
+          proj_4_title: "Smart Hydroponic with Camera Monitoring",
+          proj_4_desc:
+            "Developed an IoT-based hydroponic monitoring system integrating ESP32, environmental sensors, and YOLOv11 computer vision to monitor plant growth and conditions in real time. Data is transmitted via MQTT/HTTP and displayed through a monitoring dashboard.",
+          proj_5_title: "GrowHytech – Smart Hydroponic Monitoring Application",
+          proj_5_desc:
+            "Developed an Android-based smart hydroponic monitoring application for real-time monitoring of temperature, humidity, pH, and plant growth. The application integrates IoT sensors and YOLOv11 computer vision to provide plant monitoring data through an intuitive mobile interface.",
+          proj_6_title:
+            "Auto COS Tin Deburring Machine – Electrical Wiring & Assembly Support",
+          proj_6_desc:
+            "Contributed to the development of a COS Tin Deburring Machine as a wiring technician, supporting electrical wiring, component installation, machine assembly, and other technical activities during the machine-building process.",
+          proj_7_title: "Automation Machining Line – Wiring & Assembly Support",
+          proj_7_desc:
+            "Supported the development of an automation machining machine by performing electrical wiring, cable routing, component installation, and machine assembly.",
+          proj_8_title:
+            "Auto Transfer System – Electrical Wiring & Assembly Support",
+          proj_8_desc:
+            "Assisted in the development of an automatic material transfer machine by carrying out electrical wiring, cable termination, component installation, and connection checks. Supported the technical team in preparing the machine for system integration and ensuring the electrical components were properly installed according to the required configuration.",
+
+          // Contact Section
+          contact_subtitle: "CONTACT",
+          contact_title_1: "Let's",
+          contact_title_2: "Discuss",
+          contact_desc:
+            "Have an idea or an exciting opportunity? I’m always open to meaningful conversations, new challenges, and opportunities to collaborate, learn, and create impactful solutions together.",
+        },
+        id: {
+          // Nav & Hero
+          nav_home: "Beranda",
+          nav_about: "Tentang",
+          nav_skills: "Keahlian",
+          nav_projects: "Proyek",
+          nav_contact: "Kontak",
+          hero_subtitle:
+            "Teknik Mekatronika || Otomasi Industri || Sistem Kontrol",
+          hero_desc:
+            "Pengalaman magang selama 6 bulan di bagian Aplikasi Elektrikal & Robotik 1 PT Astra Otoparts divisi Winteq",
+          btn_email: "Kirim Email",
+          btn_cv: "Unduh CV",
+
+          // About Section
+          about_subtitle: "TENTANG SAYA",
+          about_bio_1:
+            "<strong>Mahasiswa tingkat akhir Teknik Mekatronika di Politeknik Astra</strong> dengan ketertarikan kuat pada otomasi industri, teknik elektro, sistem kontrol, dan desain mekanik.",
+          about_bio_2:
+            "<strong>Keahlian dalam PLC, HMI, pengkabelan listrik, integrasi sistem, CAD, serta mikrokontroler/IoT</strong> melalui pengalaman proyek akademis dan industri. Seorang pembelajar yang berdedikasi dengan keterampilan pemecahan masalah, kerja sama tim, komunikasi, dan adaptabilitas yang baik.",
+          about_lang_title: "Bahasa",
+          lang_id: "Indonesia — Mahir",
+          lang_en: "Inggris — Menengah",
+          lang_ar: "Arab — Menengah",
+          lang_de: "Jerman — Pasif",
+          lang_ja: "Jepang — Dasar",
+          stat_college: "Mulai Kuliah",
+          stat_projects: "Proyek Selesai",
+          stat_tools: "Keterampilan Alat",
+
+          // Skills Section
+          skills_title: "Keahlian & Keahlian Khusus",
+          cat_automation: "Otomasi Industri",
+          skill_plc: "Pemrograman PLC",
+          skill_hmi: "Desain HMI",
+          skill_problem: "Pemecahan Masalah",
+          skill_pneumatics: "Pneumatik & Hidrolik",
+          skill_wiring: "Pengkabelan Listrik",
+          cat_iot: "Platform IoT & Visualisasi Data",
+          cat_cad: "Desain CAD & PCB",
+          skill_creo: "Pemodelan 3D CREO",
+          skill_kicad: "Desain PCB KiCad",
+          cat_embedded: "Sistem Tertanam & Mikrokontroler",
+          cat_database: "Basis Data & Backend",
+          cat_app: "Pengembangan Aplikasi & UI",
+          skill_xml: "Desain UI XML",
+
+          // Projects Section
+          projects_title: "Proyek",
+          proj_1_title: "Sistem Pencampuran Cat Otomatis",
+          proj_1_desc:
+            "Sistem Pencampuran Cat Otomatis yang dikembangkan menggunakan PLC Omron dan HMI sebagai bagian dari proyek dasar teknik otomasi, menampilkan proses pemilihan warna, penakaran (dosing), dan pencampuran secara otomatis.",
+          proj_2_title:
+            "Manufaktur Briket Arang Tempurung Kelapa Berbasis SCADA",
+          proj_2_desc:
+            "Sistem manufaktur briket berbasis SCADA yang mengintegrasikan PLC Mitsubishi, Omron, dan Schneider ke dalam satu PC untuk pemantauan terpusat dan kontrol proses.",
+          proj_3_title: "Hot Rack - PT. Suryaraya Rubberindo Industries",
+          proj_3_desc:
+            "Proyek otomasi industri yang dikembangkan sebagai bagian dari proyek dosen kampus untuk PT Suryaraya Rubberindo Industries. Bertanggung jawab membantu pengkabelan listrik, pembuatan diagram pengkabelan, pemrograman PLC, dan konfigurasi HMI, dengan target integrasi sistem ≥90% dan verifikasi I/O 97%.",
+          proj_4_title: "Hidroponik Pintar dengan Pemantauan Kamera",
+          proj_4_desc:
+            "Mengembangkan sistem pemantauan hidroponik berbasis IoT yang mengintegrasikan ESP32, sensor lingkungan, dan computer vision YOLOv11 untuk memantau pertumbuhan serta kondisi tanaman secara real-time. Data dikirimkan melalui MQTT/HTTP dan ditampilkan melalui dashboard pemantauan.",
+          proj_5_title: "GrowHytech – Aplikasi Pemantauan Hidroponik Pintar",
+          proj_5_desc:
+            "Mengembangkan aplikasi pemantauan hidroponik pintar berbasis Android untuk memantau suhu, kelembapan, pH, dan pertumbuhan tanaman secara real-time. Aplikasi ini mengintegrasikan sensor IoT dan computer vision YOLOv11 untuk menyajikan data pemantauan tanaman melalui antarmuka seluler yang intuitive.",
+          proj_6_title:
+            "Mesin Auto COS Tin Deburring – Dukungan Wiring & Perakitan",
+          proj_6_desc:
+            "Berkontribusi dalam pengembangan Mesin COS Tin Deburring sebagai teknisi wiring, mendukung pengkabelan listrik, pemasangan komponen, perakitan mesin, dan aktivitas teknis lainnya selama proses pembuatan mesin.",
+          proj_7_title: "Lini Permesinan Otomasi – Dukungan Wiring & Perakitan",
+          proj_7_desc:
+            "Mendukung pengembangan mesin permesinan otomasi dengan melakukan pengkabelan listrik, penataan kabel (routing), pemasangan komponen, dan perakitan mesin.",
+          proj_8_title:
+            "Sistem Transfer Otomatis – Dukungan Wiring & Perakitan",
+          proj_8_desc:
+            "Membantu pengembangan mesin transfer material otomatis dengan melakukan pengkabelan listrik, terminasi kabel, pemasangan komponen, dan pengecekan koneksi. Mendukung tim teknis dalam mempersiapkan mesin untuk integrasi sistem dan memastikan komponen listrik terpasang dengan benar sesuai konfigurasi yang dibutuhkan.",
+
+          // Contact Section
+          contact_subtitle: "KONTAK",
+          contact_title_1: "Mari",
+          contact_title_2: "Berdiskusi",
+          contact_desc:
+            "Punya ide atau peluang yang menarik? Saya selalu terbuka untuk percakapan yang bermakna, tantangan baru, dan kesempatan untuk berkolaborasi, belajar, serta menciptakan solusi yang berdampak bersama.",
+        },
+      };
+
+      // Gunakan DOMContentLoaded agar script berjalan setelah seluruh elemen HTML selesai dimuat
+      document.addEventListener("DOMContentLoaded", () => {
+        const btnEn = document.getElementById("btn-lang-en");
+        const btnId = document.getElementById("btn-lang-id");
+
+        function setLanguage(lang) {
+          const elements = document.querySelectorAll("[data-i18n]");
+
+          elements.forEach((el) => {
+            const key = el.getAttribute("data-i18n");
+            if (translations[lang] && translations[lang][key]) {
+              el.innerHTML = translations[lang][key];
+            }
+          });
+
+          if (lang === "en") {
+            if (btnEn) btnEn.classList.add("active");
+            if (btnId) btnId.classList.remove("active");
+          } else {
+            if (btnId) btnId.classList.add("active");
+            if (btnEn) btnEn.classList.remove("active");
+          }
+        }
+
+        if (btnEn) {
+          btnEn.addEventListener("click", () => setLanguage("en"));
+        }
+        if (btnId) {
+          btnId.addEventListener("click", () => setLanguage("id"));
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const heroImage = document.getElementById("interactive-img");
+        const heroWrapper = document.querySelector(".hero-image-wrapper");
+
+        if (heroImage && heroWrapper) {
+          // Fungsi untuk menghitung rotasi berdasarkan koordinat X dan Y
+          function handleMove(clientX, clientY) {
+            const rect = heroWrapper.getBoundingClientRect();
+
+            // Hitung koordinat relatif terhadap titik tengah elemen
+            const x = clientX - rect.left - rect.width / 2;
+            const y = clientY - rect.top - rect.height / 2;
+
+            // Batasi sudut rotasi maksimal (misal 20 derajat)
+            const rotateX = (-y / (rect.height / 2)) * 20;
+            const rotateY = (x / (rect.width / 2)) * 20;
+
+            // Terapkan efek tilt 3D
+            heroImage.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+          }
+
+          // Reset posisi gambar kembali semula
+          function handleReset() {
+            heroImage.style.transform =
+              "rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+          }
+
+          // 1. EVENT MOUSE (Desktop/Laptop)
+          heroWrapper.addEventListener("mousemove", (e) => {
+            handleMove(e.clientX, e.clientY);
+          });
+
+          heroWrapper.addEventListener("mouseleave", handleReset);
+
+          // 2. EVENT TOUCH / SENTUHAN JARI (HP & Tablet)
+          heroWrapper.addEventListener(
+            "touchmove",
+            (e) => {
+              if (e.touches.length > 0) {
+                const touch = e.touches[0];
+                handleMove(touch.clientX, touch.clientY);
+              }
+            },
+            { passive: true }
+          );
+
+          heroWrapper.addEventListener("touchend", handleReset);
+          heroWrapper.addEventListener("touchcancel", handleReset);
+        }
+      });
+    </script>
+  </body>
+</html>
